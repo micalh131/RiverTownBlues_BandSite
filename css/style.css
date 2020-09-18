@@ -1,0 +1,347 @@
+
+#screen-shower {
+  background: red;
+  color: #fff;
+  width: 100%;
+  padding: 1em;
+  grid-area: screenshower;
+}
+
+#screen-shower::after {
+  content: '(<768px) Tablet And Small Desktop Layout (old standard)';
+}
+
+/* ---------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------- */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden !important;
+  background-color: rgb(24,24,24);
+  color: white !important;
+  height: 100%;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+
+
+}
+
+h1 {
+  font-size: 1.6em;
+  color: #E3B2A1;
+}
+
+h2 {
+  color: #F7C5B5;
+}
+
+h2,
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  font-size: 1.1em;
+  color: #F5DFD7;
+  letter-spacing: .05em;
+  line-height: 150%;
+}
+
+
+
+h1::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 2%;
+  text-align: center;
+  padding-top: 30px;
+  border-bottom: 2px solid gray;
+}
+
+
+/* ---------------------------------------- */
+/* HEADER */
+/* ---------------------------------------- */
+
+header{
+  background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/olearys_4.jpg);
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/olearys_4.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+
+.logo .img-fluid {
+  margin-top: 4em;
+  height: 20em !important;
+  
+}
+
+/* Links */
+
+td a:link,
+td a:visited {
+  color: #DB937B;
+  padding-bottom: 1px;
+  border-bottom: 1px solid gray;
+  -webkit-transition: border-bottom 0.2s, color 0.2s;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+td a:hover,
+td a:active {
+  color: lightgray;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+}
+
+
+/* ---------------------------------------- */
+/* NAVBAR */
+/* ---------------------------------------- */
+
+.navbar-nav {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 0.9em;
+}
+
+ /* Makes nav transparent */
+  .bg-dark {
+    opacity: .5 !important;
+
+  }
+
+/*Makes first nav icons inside slide nav orange, have to targes everyone*/
+  .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link
+   {
+  color: #ffb84d !important;
+}
+
+
+
+/*Makes main nav icons and second slide nav orange, have to targes everyone*/
+.navbar-dark .navbar-nav .nav-link {
+  color:#ffb84d !important;
+}
+
+
+
+/*Makes third and fouth nav icons in second slide nav orange, have to targes everyone*/
+.nav-link.disabled {
+    color:#ffb84d !important;
+
+}
+
+
+/* ---------------------------------------- */
+/* Main */
+/* ---------------------------------------- */
+
+
+#about,
+#gallery,
+#tour,
+#discography,
+#contact {
+  outline: 0 none;
+}
+
+#about,
+#discography{
+  margin-top: 100px;
+  margin-bottom: 150px;
+
+}
+
+/* Tour */
+
+#tour{
+  margin-top: 150px;
+  margin-bottom: 0;
+}
+
+.table {
+  margin-top: 10%;
+  color: #E3B2A1;
+}
+
+/* Discoraphy */
+
+#discography iframe {
+  margin-top: 40px;
+}
+
+/* IFrame */
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* About */
+
+#about_undertitle {
+  margin-top: 5%;
+}
+
+.column_margin {
+  margin-top: 5%;
+}
+
+/* Contact */
+
+.last-content {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.last-content p {
+  text-align: center;
+}
+
+/* =================================
+  Slideshow
+==================================== */
+
+#slideshow_1,
+#slideshow_2 {
+  margin: 80px auto;
+  position: relative;
+  width: 90%;
+  height: 340px;
+  padding: 10px;
+}
+
+#slideshow_1 > div,
+#slideshow_2 > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.no_padding_left {
+  padding-left: 0 !important;
+  margin-top: -5%;
+}
+
+
+/* IMG*/
+
+
+
+.image1 {
+  background-image: url("../img/pasta_1.jpg");
+}
+
+.image2 {
+  background-image: url("../img/pasta_2.jpg");
+}
+
+.image3 {
+  background-image: url("../img/pasta_3.jpg");
+}
+
+.image4 {
+  background-image: url("../img/pasta_4.jpg");
+}
+
+.image5 {
+  background-image: url("../img/olearys_2.jpg");
+}
+
+.image6 {
+  background-image: url("../img/olearys_1.jpg");
+}
+
+.image7 {
+  background-image: url("../img/olearys_3.jpg");
+}
+
+.image8 {
+  background-image: url("../img/olearys_4.jpg");
+}
+
+.image {
+  background-size: cover;
+  width: 100%;
+  border-radius: 3px;
+
+}
+
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+
+
+ @media (min-width: 576px) {
+  
+
+  body {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+}
+
+
+@media (min-width: 768px) {
+  
+
+  .logo .img-fluid {
+    margin-top: -4em;
+    height: 30em !important;
+  }
+
+  #gigs {
+    font-size: 1.2em;
+  }
+
+  #tour{
+    margin-top: 40px;
+  
+  }
+
+}
+
+@media (min-width: 992px) {
+ 
+
+  body {
+    font-size: 1.2em;
+  }
+
+  .logo .img-fluid {
+    margin-top: -3em;
+  }
+
+ 
+}
+
+@media (min-width: 1200px) {
+  
+
+  body {
+    font-size: 1.3em;
+  }
+
+}
